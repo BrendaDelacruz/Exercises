@@ -23,9 +23,19 @@ document.addEventListener("wheel", () => {
     box.style.backgroundColor = "orange";
 })
 
-box.addEventListener("keydown", (r) => {
-    e.target.style.backgroundColor = red;  
+document.addEventListener('keydown', (event) => {
+    var box = document.getElementById('black');
+
+    if (event.key === 'b') {
+        box.style.backgroundColor = 'blue';
+    } else if (event.key === 'r') {
+        box.style.backgroundColor = 'red';
+    } else if (event.key === 'y') {
+        box.style.backgroundColor = 'yellow';
+    } else if (event.key === 'g') {
+        box.style.backgroundColor = 'green';
+    } else if (event.key === 'o') {
+        box.style.backgroundColor = 'orange';
+    }
 });
-
-
 
